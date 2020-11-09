@@ -1,0 +1,30 @@
+ <!-- Start header -->
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <%= link_to image_tag("logo.png"), root_path, class: "navbar-branch" %>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li> <%= link_to "Home", root_path , class: "nav-link" %> </li>
+                        <li> <%= link_to "About", pages_about_path , class: "nav-link" %> </li>
+                        <li> <%= link_to "Courses", pages_course_path , class: "nav-link" %> </li>   
+                        <li> <%= link_to "Research", pages_research_path , class: "nav-link" %> </li>
+                        <li> <%= link_to "Service", pages_service_path , class: "nav-link" %> </li>
+                        <li> <%= link_to "Contact Us", pages_contact_path , class: "nav-link" %> </li>					
+                    </ul>
+                </div>
+                <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Search">
+                    <a class="search-btn">
+                        <%= image_tag ("search_icon.png") %>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
