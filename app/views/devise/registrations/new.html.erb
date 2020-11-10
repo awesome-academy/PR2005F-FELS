@@ -1,0 +1,19 @@
+<body style="background-color: #F5F5F5">
+  <div id="logreg-forms">
+<%= form_for(resource, :as => resource_name, :url => user_registration_path) do |f| %>
+  <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign Up</h1>
+ <%= render "devise/shared/socials" %> </center> 
+  <p style="text-align:center"> OR  </p>
+    <%= f.email_field :email, placeholder: "Email Address", class: "form-control", autofocus: true, autocomplete: "email" %>
+    <%= f.password_field :password, placeholder: "Password", class: "form-control", autocomplete: "current-password" %>
+     <%= f.password_field :password_confirmation, placeholder: "Password Confirm", class: "form-control", autocomplete: "new-password" %>
+<hr>
+  <div class="actions">
+    <%= f.submit "Sign Up", class: "btn btn-success btn-block" %>
+  </div>
+<% end %>
+
+</div>
+
+
+</body>
